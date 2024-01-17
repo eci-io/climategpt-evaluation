@@ -1,0 +1,23 @@
+group:
+  - climabench
+task: climate_stance
+dataset_path: /media/16TBNVME/data/eval/climabench_data/all_data/ClimateStance
+output_type: multiple_choice
+training_split: test
+validation_split: validation
+test_split: test
+fewshot_split: validation
+doc_to_text: "Is the following statement in-favor, against, or ambiguous about climate change prevention:\n{{text}}\nAnswer:"
+doc_to_target: "{{label}}"
+doc_to_choice: "{{['ambiguous', 'in-favour', 'against']}}"
+should_decontaminate: false
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.f1
+    aggregation: !function utils.agg_f1
+    higher_is_better: true

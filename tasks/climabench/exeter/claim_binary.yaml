@@ -1,0 +1,26 @@
+group:
+  - climabench
+task: claim_binary
+dataset_path: '/media/16TBNVME/data/eval/exeter/binary/'
+output_type: multiple_choice
+training_split: test
+validation_split: validation
+test_split: test
+fewshot_split: validation
+doc_to_text: "This is a climate-misinformation classification task. Your task is that of telling whether the given text presents a contrarian claim regarding climate change. Your reply should be: 1: contains a contrarian claim; 0: does not contain a contrarian claim. Your reply should contain only the corresponding number and nothing else (i.e., 0 or 1).\nTEXT: {{text}} ANSWER: "
+doc_to_target: "{{bin_label}}"
+doc_to_choice: "{{['0', '1']}}"
+# conveys a contrarian claim regarding climate change.
+# process_results: !function utils.process_results
+# a contrarian viewpoint on climate change.
+should_decontaminate: false
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.f1
+    aggregation: !function utils.agg_f1
+    higher_is_better: true

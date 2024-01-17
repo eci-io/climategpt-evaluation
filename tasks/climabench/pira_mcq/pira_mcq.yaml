@@ -1,0 +1,26 @@
+group:
+  - climabench
+task: pira_mcq
+dataset_path: 'paulopirozelli/pira'
+dataset_name: 'mcqa'
+output_type: multiple_choice
+training_split: test
+validation_split: validation
+test_split: test
+fewshot_split: validation
+doc_to_text: "Answer the following question with the correct alternative. GIVE ONLY THE CORRECT LETTER. \nQuestion: {{question}}. A: {{A}}. B: {{B}}. C: {{C}}. D: {{D}}. E: {{E}}\nANSWER:"
+doc_to_target: "{{alternative}}"
+doc_to_choice: "{{['A', 'B', 'C', 'D', 'E']}}"
+# process_results: !function utils.process_results
+# process_docs: !function utils.prepate_AT_data
+should_decontaminate: false
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.f1
+    aggregation: !function utils.agg_f1
+    higher_is_better: true
