@@ -26,7 +26,7 @@ b. by directly passing the paths to the tasks as command-line arguments using `-
         	--tasks claim_binary \
         	--output_path /results/falcon-7b.jsonl \
         	--show_config --log_samples \
-        	--num_fewshot 5 --include_path <path/to/this/repo/tasks/task_dir>
+        	--num_fewshot 5 --include_path <path/to/this/repo/tasks/exeter>
    
       
 
