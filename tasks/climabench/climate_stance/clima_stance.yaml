@@ -1,7 +1,7 @@
 group:
   - climabench
 task: climate_stance
-dataset_path: /media/16TBNVME/data/eval/climabench_data/all_data/ClimateStance
+dataset_path: climate_stance
 output_type: multiple_choice
 training_split: test
 validation_split: validation

@@ -1,7 +1,8 @@
 group:
   - climabench
 task: claim_binary
-dataset_path: '/media/16TBNVME/data/eval/exeter/binary/'
+dataset_path: eci-io/climate-evalutaion
+dataset_name: exeter
 output_type: multiple_choice
 training_split: test
 validation_split: validation

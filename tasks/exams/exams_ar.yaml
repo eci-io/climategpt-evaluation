@@ -1,6 +1,6 @@
 task: exams_ar
-dataset_path: '/home/eqty/arabic_exams'
-# dataset_name: main
+dataset_path: eci-io/climate-evalutaion
+dataset_name: exams
 output_type: multiple_choice
 # training_split: train
 # validation_split: validation

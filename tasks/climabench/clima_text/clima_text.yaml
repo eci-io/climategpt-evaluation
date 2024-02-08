@@ -1,7 +1,8 @@
 group:
   - climabench
 task: climate_text
-dataset_path: /media/16TBNVME/data/eval/climabench_data/all_data/ClimaText/
+dataset_path: eci-io/climate-evalutaion
+dataset_name: climatext
 output_type: multiple_choice
 training_split: train
 validation_split: validation

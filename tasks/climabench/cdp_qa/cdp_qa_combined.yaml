@@ -1,8 +1,8 @@
 group:
   - climabench
 task: cdp_qa_combined
-dataset_path: /media/16TBNVME/data/eval/climabench_data/all_data/CDP/Combined/ #/nas/data/LLM/llm-evaluation-datasets/tasks/climabench/CDP/
-dataset_kwargs: {data_files:{"train": "train_qa.csv","test": "test_qa.csv", "validation": "val_qa.csv"}}
+dataset_path: eci-io/climate-evalutaion
+dataset_name: cdp_qa
 output_type: multiple_choice
 training_split: train
 validation_split: validation
