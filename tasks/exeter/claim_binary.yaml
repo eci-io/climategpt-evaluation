@@ -2,7 +2,8 @@ group:
   - climabench
 task: claim_binary
 dataset_path: eci-io/climate-evalutaion
-dataset_name: exeter
+dataset_name: null # exeter
+dataset_kwargs: {data_files:{"train": ['exeter/training.csv'], "validation": ['exeter/validation.csv'], "test": ["exeter/test.csv"]}}
 output_type: multiple_choice
 training_split: test
 validation_split: validation

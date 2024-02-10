@@ -2,7 +2,8 @@ group:
   - climabench
 task: climate_text
 dataset_path: eci-io/climate-evalutaion
-dataset_name: climatext
+dataset_name: null #climatext
+dataset_kwargs: {data_files:{"train": ['ClimaText/train-data/Wiki-Doc-Train.tsv'], "validation": ['ClimaText/dev-data/Wikipedia (dev).tsv', 'ClimaText/dev-data/Wiki-Doc-Dev.tsv'], "test": ["ClimaText/test-data/10-Ks (2018, test).tsv", "ClimaText/test-data/Claims (test).tsv", "ClimaText/test-data/Wikipedia (test).tsv"]}}
 output_type: multiple_choice
 training_split: train
 validation_split: validation

@@ -1,6 +1,7 @@
 task: exams
 dataset_path: eci-io/climate-evalutaion
-dataset_name: translated_exams
+dataset_name: null # translated_exams
+dataset_kwargs: {data_files:{"test": ["exams/translated/test.csv"]}}
 output_type: multiple_choice
 # training_split: train
 # validation_split: validation

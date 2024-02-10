@@ -2,7 +2,8 @@ group:
   - climabench
 task: climate_eng
 dataset_path: eci-io/climate-evalutaion
-dataset_name: climate_eng
+dataset_name: null #climate_eng
+dataset_kwargs: {data_files:{"train": ['ClimateEng/train.csv'], "validation": ['ClimateEng/val.csv'], "test": ["ClimateEng/test.csv"]}}
 output_type: multiple_choice
 training_split: train
 validation_split: validation

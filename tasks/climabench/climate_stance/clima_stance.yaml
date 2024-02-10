@@ -1,7 +1,9 @@
 group:
   - climabench
 task: climate_stance
-dataset_path: climate_stance
+dataset_path: eci-io/climate-evalutaion
+dataset_name: null #climate_stance
+dataset_kwargs: {data_files:{"train": ['ClimateStance/train.csv'], "validation": ['ClimateStance/val.csv'], "test": ["ClimateStance/test.csv"]}}
 output_type: multiple_choice
 training_split: test
 validation_split: validation
