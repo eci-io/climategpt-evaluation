@@ -1,4 +1,4 @@
-group:
+tag:
   - climabench
 task: claim_binary
 dataset_path: eci-io/climate-evalutaion

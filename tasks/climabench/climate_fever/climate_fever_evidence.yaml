@@ -1,4 +1,4 @@
-group:
+tag:
   - climabench
 task: climate_fever_evidence
 dataset_path: climate_fever

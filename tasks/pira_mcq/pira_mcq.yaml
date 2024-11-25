@@ -1,4 +1,4 @@
-group:
+tag:
   - climabench
 task: pira_mcq
 dataset_path: 'paulopirozelli/pira'

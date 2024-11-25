@@ -1,4 +1,4 @@
-group:
+tag:
   - climabench
 task: climate_stance
 dataset_path: eci-io/climate-evalutaion
